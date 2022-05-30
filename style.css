@@ -205,10 +205,10 @@ position: relative;
 .branch4 {
     width: 100%;
     transform: scale(-1, -1);
-    transform: rotate(120deg);
+    /* transform: rotate(120deg); */
     position: absolute;
     left: -100%;
-    top:0;
+    z-index: 1;
 }
 .other__branch {
     width: 100%;

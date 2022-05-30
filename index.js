@@ -114,9 +114,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.heart').classList.add('heartan');
         }
     });
-    let audio = document.querySelector('audio');
+    // let audio = document.querySelector('audio');
 
-    document.onscroll = function(){audio.play()};
+    // document.onscroll = function(){audio.play()};
     // let audio = document.querySelector('audio');
     // console.log(audio.value);
     // let submit = document.querySelector('input[type="submit"]');
