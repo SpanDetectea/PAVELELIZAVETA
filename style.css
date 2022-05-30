@@ -229,9 +229,6 @@ position: relative;
     position: relative;
     background: #d9ced1;
     width: 100%;
-    /* padding: 0 20%; */
-   
-    /* font-size: 0; */
 }
 .feedback {
     position: absolute;
@@ -343,10 +340,14 @@ input[type='submit']:hover {
 #YMapsID {
     width: 45%;
     height: 300px;
+    position: relative;
+    z-index: 1000;
 }
 #YMapsID2 {
     width: 45%;
     height: 300px;
+    position: relative;
+    z-index: 1000;
 }
 @media (max-width:520px) {
     .carts {
