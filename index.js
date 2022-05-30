@@ -114,7 +114,12 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.heart').classList.add('heartan');
         }
     });
-    let submit = document.querySelector('input[type="submit"]');
+    let audio = document.querySelector('audio');
+
+    document.onscroll = function(){audio.play()};
+    // let audio = document.querySelector('audio');
+    // console.log(audio.value);
+    // let submit = document.querySelector('input[type="submit"]');
     // console.log(submit);
     // submit.addEventListener('click', () => {
     //     // console.log(e);
