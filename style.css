@@ -16,7 +16,7 @@ body {
 }
 .header {
     color: #f5f5dc ;
-    height: 540px;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
