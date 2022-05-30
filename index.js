@@ -1,17 +1,14 @@
 var date = new Date(2022, 8, 3, 16).getTime();
-// 1.01.2011, 02:03:04.567
 
 document.addEventListener('DOMContentLoaded', function () {
     var now = new Date().getTime();
     let i = date - now;
     let days = Math.floor((i) / (1000 * 60 * 60 * 24));
-    // console.log(days);
     let hours = Math.floor((i - 1000 * 60 * 60 * 24 * days) / (1000 * 60 * 60));
     let minutes = Math.floor((i - 1000 * 60 * 60 * 24 * days - 1000 * 60 * 60 * hours) / (1000 * 60));
     let seconds = Math.floor((i - 1000 * 60 * 60 * 24 * days - 1000 * 60 * 60 * hours - 1000 * 60 * minutes) / 1000);
     let timer = document.createElement('div');
     timer.classList.add('deadline');
-    // timer.innerHTML = `<div>Дней ${days} </div><div>Часов ${hours} </div><div>Минут ${minutes} </div><div>Секунд ${seconds} </div>`;
     timer.innerHTML = `<div class="copy">
     <div class="copy__wrapper">
         <div>Дней</div>
@@ -40,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
         let minutes = Math.floor((i - 1000 * 60 * 60 * 24 * days - 1000 * 60 * 60 * hours) / (1000 * 60));
         let seconds = Math.floor((i - 1000 * 60 * 60 * 24 * days - 1000 * 60 * 60 * hours - 1000 * 60 * minutes) / 1000);
         let timer = document.querySelector('.deadline');
-        // timer.innerHTML = `<div>Дней ${days} </div><div>Часов ${hours} </div><div>Минут ${minutes} </div><div>Секунд ${seconds} </div>`;
         timer.innerHTML = `<div class="copy">
         <div class="copy__wrapper">
             <div>Дней</div>
@@ -114,62 +110,4 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.heart').classList.add('heartan');
         }
     });
-    // let audio = document.querySelector('audio');
-
-    // document.onscroll = function(){audio.play()};
-    // let audio = document.querySelector('audio');
-    // console.log(audio.value);
-    // let submit = document.querySelector('input[type="submit"]');
-    // console.log(submit);
-    // submit.addEventListener('click', () => {
-    //     // console.log(e);
-    //     let form = {};
-    //     let drinks = [];
-    //     let name = document.querySelectorAll('input[type="text"]');
-    //     name.forEach((item, pos) => {
-    //         if (pos == 0) {
-    //             form.fname = item.value;
-    //         } else {
-    //             form.sname = item.value;
-    //         }
-    //     });
-    //     let presence = document.getElementsByName('Presence');
-    //     for (i = 0; i < presence.length; i++) {
-    //         if (presence[i].checked) {
-    //             form.presence = presence[i].value;
-    //         }
-    //     };
-    //     let foot = document.getElementsByName('foot');
-    //     for (i = 0; i < foot.length; i++) {
-    //         if (foot[i].checked) {
-    //             form.foot = foot[i].value;
-    //         }
-    //     };
-    //     let drink = document.getElementsByName('drink');
-    //     for (i = 0; i < drink.length; i++) {
-    //         if (drink[i].checked) {
-    //             drinks.push(drink[i].value);
-    //         }
-    //     };
-    //     form.drink = drinks;
-    //     // console.log(form);
-    //     fetch('http://pavelelizaveta.ua', {
-    //         method: 'POST',
-    //         header: {
-    //             'Content-Type': 'application/json',
-    //             "Accept":"application/json"
-    //         },
-    //         // mode: 'no-cors',
-    //         body: JSON.stringify(form)
-    //     })
-    //         .then(response => response.text())
-    //         .then(response => {
-    //             // console.log('dsadsa');
-    //             console.log(response);
-    //             // setmessageSend(true);
-    //         })
-    // })
-    // document.querySelector('form').onsubmit = (e) => {
-    //     e.preventDefault();
-    // }
 });
